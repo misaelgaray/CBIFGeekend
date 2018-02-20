@@ -1,0 +1,25 @@
+{
+  "name": "CBIFGeekend",
+  "version": "1.0.0",
+  "description": "Repositorio público de curso \"Crea un chatbot inteligente para Facebook\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misaelgaray/CBIFGeekend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/misaelgaray/CBIFGeekend/issues"
+  },
+  "homepage": "https://github.com/misaelgaray/CBIFGeekend#readme",
+  "dependencies": {
+    "botbuilder": "^3.14.0",
+    "dotenv": "^5.0.0",
+    "restify": "^6.3.4"
+  }
+}

@@ -1,5 +1,6 @@
 var builder = require('botbuilder');
 var restify = require('restify');
+require('dotenv').config();
 
 var server = restify.createServer();
 server.listen(8888, function(){
@@ -7,8 +8,8 @@ server.listen(8888, function(){
 });
 
 var connector = new builder.ChatConnector({
-	appId : "",
-	appPassword : ""
+	appId : process.env.APP_ID,
+	appPassword : process.env.APP_PASSWORD
 });
 
 server.post('/geekend', connector.listen());

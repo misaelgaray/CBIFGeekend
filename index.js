@@ -8,12 +8,9 @@ server.listen(3000, function(){
 });
 
 var connector = new builder.ChatConnector({
-	appId : process.env.APP_ID,
-	appPassword : process.env.APP_PASSWORD
+	appId :"2a599cfe-8cb2-40db-a340-d8dba93523d6" ,
+	appPassword : "rsBRDUDGZ24[gjgbb234*_!"
 });
-
-console.log(process.env.APP_ID);
-console.log(process.env.APP_PASSWORD);
 
 server.post('/geekend', connector.listen());
 

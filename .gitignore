@@ -1,4 +1,4 @@
-#ignore .env
-
+#ignor
+.env
 #ignore node moduels
 node_modules/

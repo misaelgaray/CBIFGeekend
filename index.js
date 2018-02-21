@@ -3,7 +3,7 @@ var restify = require('restify');
 require('dotenv').config();
 
 var server = restify.createServer();
-server.listen(8888, function(){
+server.listen(3000, function(){
 	console.log("Running at 8888");
 });
 
@@ -11,6 +11,9 @@ var connector = new builder.ChatConnector({
 	appId : process.env.APP_ID,
 	appPassword : process.env.APP_PASSWORD
 });
+
+console.log(process.env.APP_ID);
+console.log(process.env.APP_PASSWORD);
 
 server.post('/geekend', connector.listen());
 

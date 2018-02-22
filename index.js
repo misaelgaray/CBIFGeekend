@@ -3,7 +3,7 @@ var restify = require('restify');
 require('dotenv').config();
 
 var server = restify.createServer();
-server.listen(3000, function(){
+server.listen(process.env.port || process.env.PORT || 3000, function(){
 	console.log("Running at 8888");
 });
 

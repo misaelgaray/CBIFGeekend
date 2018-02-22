@@ -8,8 +8,8 @@ server.listen(process.env.port || process.env.PORT || 3000, function(){
 });
 
 var connector = new builder.ChatConnector({
-	appId :"2a599cfe-8cb2-40db-a340-d8dba93523d6" ,
-	appPassword : "rsBRDUDGZ24[gjgbb234*_!"
+	appId :process.env.APP_ID ,
+	appPassword : process.env.APP_PASSWORD 
 });
 
 server.post('/geekend', connector.listen());

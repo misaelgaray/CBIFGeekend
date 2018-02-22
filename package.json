@@ -1,8 +1,7 @@
 {
   "name": "CBIFGeekend",
   "version": "1.0.0",
-  "description": "Repositorio público de curso Crea un chatbot inteligente para Facebook",
-  "main": "index.js",
+  "description": "Repositorio publico de curso Crea un chatbot inteligente para Facebook",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
